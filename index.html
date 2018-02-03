@@ -1,0 +1,1132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/unslider.css">
+    <link rel="stylesheet" href="css/unslider-dots.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+
+
+    <title>狗GO玩具專賣店</title>
+    <style>
+        * {
+            /*border: solid 1px black;*/
+            box-sizing: border-box;
+            font-family: 微軟正黑體;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+
+        }
+
+        .navbar {
+            position: fixed;
+            width: 100%;
+            left: 0;
+            top: 0;
+            z-index: 99;
+        }
+
+        .navbar-brand {
+            width: 150px;
+        }
+
+        .nav-link {
+            font-size: 24px;
+            font-weight: normal;
+            line-height: normal;
+        }
+
+        .slider {
+            padding-top: 173.72px;
+        }
+
+        .unslider {
+            position: relative;
+
+        }
+
+        .bg-img1 {
+            height: 53vh;
+            background-image: url('http://petstages.tw/content/img/2016_Slider.jpg');
+            background-size: cover;
+        }
+
+        .bg-img2 {
+            height: 53vh;
+            background-image: url('http://petstages.tw/content/img/SlingSock_Slider.jpg');
+            background-size: cover;
+        }
+
+        .bg-img3 {
+            height: 53vh;
+            background-image: url('http://petstages.tw/content/img/BeyondBone_Slider.jpg');
+            background-size: cover;
+        }
+
+        .unslider-arrow {
+            z-index: 10;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .unslider-nav {
+            z-index: 10;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .bg-img1 {
+            padding: 0;
+        }
+
+        .slider-frame {
+            width: 100%;
+            height: 15px;
+            background-image: url('http://petstages.tw/content/img/seperator.png');
+            background-size: contain;
+
+        }
+
+        #content-one {
+            height: 0px;
+            transform: translateY(-188px);
+        }
+
+        .content-one {
+            width: 100%;
+        }
+
+        content-oneM {
+            width: 100%;
+            height: 70vh;
+            float: left;
+        }
+
+        .content-oneR-up {
+            font-size: 46px;
+            font-weight: normal;
+            line-height: normal;
+        }
+
+        .content-oneR-two {
+            font-size: 22px;
+            font-weight: normal;
+            line-height: normal;
+
+        }
+
+        .content-oneR-three {
+            font-size: 24px;
+            font-weight: normal;
+            line-height: normal;
+        }
+
+        .content-oneR-four {
+            font-size: 20px;
+            font-weight: normal;
+            line-height: normal;
+        }
+
+        .content-oneR-down {
+            font-size: 32px;
+            text-align: right;
+            font-weight: normal;
+            line-height: normal;
+            padding-bottom: 10px;
+
+        }
+
+        .content-oneD {
+            width: 100%;
+            height: 15px;
+            background-image: url('http://petstages.tw/content/img/seperator.png');
+            background-size: contain;
+            position: relative;
+            padding: 0;
+        }
+
+        #content-two {
+            height: 0px;
+            transform: translateY(-188px);
+        }
+
+        .content-twoM {
+            padding-bottom: 10px;
+        }
+
+        .date {
+            font-size: 10px;
+        }
+
+        .type {
+            font-size: 26px;
+            color: #de636b;
+        }
+
+        .name {
+            font-size: 24px;
+            color: #666;
+        }
+
+        .discount {
+            font-size: 20px;
+            color: #f54753;
+        }
+
+        .price {
+            font-size: 12px;
+            color: #666;
+            text-decoration: line-through;
+            padding-bottom: 10px;
+
+        }
+
+
+
+        .content-twoD {
+            width: 100%;
+            height: 15px;
+            background-color: gray;
+            background-image: url('http://petstages.tw/content/img/seperator.png');
+            background-size: contain;
+
+        }
+
+        #content-three {
+            height: 0px;
+            transform: translateY(-188px);
+        }
+
+
+        .content-three {
+            width: 100%;
+        }
+
+        .content-threeT {
+            width: 100%;
+            height: 100px;
+            float: left;
+
+        }
+
+        .caption {
+            position: absolute;
+            transform: translateY(100%);
+            max-height: 100% !important;
+            overflow-y: auto;
+            bottom: 0;
+            font-size: 14px;
+            color: #FFF;
+            width: 100%;
+
+        }
+
+        .content-threerow {
+            width: 100%;
+            display: inline-block;
+
+        }
+
+        .img-inner {
+            width: 13%;
+            margin: 0;
+            display: inline-block;
+        }
+
+        .content-threeTmid {
+            width: 73%;
+            display: inline-block;
+
+        }
+
+        .content-threemid {
+            margin-left: 5%;
+            margin-top: 7%;
+
+
+        }
+
+        .content-threeM-img {
+            width: 30%;
+            float: left;
+
+        }
+
+        .thin-font {
+            line-height: 45px;
+            padding-bottom: 10px;
+        }
+
+        .content-threeD {
+            width: 100%;
+            height: 15px;
+            float: left;
+            background-image: url('http://petstages.tw/content/img/seperator.png');
+            background-size: contain;
+        }
+
+        #content-four {
+            height: 0px;
+            transform: translateY(-173px);
+        }
+
+        .content-four {
+            width: 100%;
+
+        }
+
+        .content-fourT {
+            width: 100%;
+            height: 100px;
+            float: left;
+
+        }
+
+
+        .product-nav ul {
+            margin: 0;
+        }
+
+        .product-nav ul li {
+            display: inline-block;
+            padding: 10px 20px;
+            position: relative;
+            right: 55px;
+        }
+
+        .product-nav ul li.chew a {
+            background-color: #faa635;
+            border-radius: 5%;
+            background-position: 0 0;
+            padding: 10px;
+            font-size: 28px;
+
+        }
+
+        .product-nav ul li.interact a {
+            background-color: #8dc63f;
+            border-radius: 5%;
+            background-position: 0 -180px;
+            padding: 10px;
+            font-size: 28px;
+        }
+
+        .product-nav ul li.play a {
+            background-color: #b3a2ce;
+            border-radius: 5%;
+            background-position: 0 -60px;
+            padding: 10px;
+            font-size: 28px;
+        }
+
+        .product-nav ul li.soothe a {
+            background-color: #6cf;
+            border-radius: 5%;
+            background-position: 0 -120px;
+            padding: 10px;
+            font-size: 28px;
+        }
+
+        .product-nav ul li.feed a {
+            background-color: #0096de;
+            border-radius: 5%;
+            background-position: 0 -420px;
+            padding: 10px;
+            font-size: 28px;
+
+        }
+
+        .product-imgone {
+            text-align: center;
+
+        }
+
+        .product-imgtwo {
+            text-align: center;
+        }
+
+        .product-imgthree {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        .content-fourD {
+            width: 100%;
+            height: 15px;
+            float: left;
+            background-image: url('http://petstages.tw/content/img/seperator.png');
+            background-size: contain;
+        }
+
+        #content-five {
+            height: 0px;
+            transform: translateY(-173px);
+        }
+
+        .content-fiveT {
+            width: 100%;
+        }
+
+        .content-fiveM {
+            width: 100%;
+        }
+
+        .content-fiveLR {
+            width: 100%;
+        }
+
+        .content-fiveL {
+            width: 50%;
+
+        }
+
+        .content-fiverR {
+            width: 50%;
+        }
+
+        .content-fiveR-up {
+            font-size: 30px;
+            top: 0;
+        }
+
+        .content-fiveR-two {
+            height: 13%;
+            font-size: 22px;
+            top: 60px;
+            font-weight: normal;
+            line-height: normal;
+            padding-bottom: 10px;
+
+        }
+
+        .content-fiveL-img {
+            margin-left: 15%;
+        }
+
+
+        .content-fiveD {
+            width: 100%;
+            height: 15px;
+            float: left;
+            background-image: url('http://petstages.tw/content/img/seperator.png');
+            background-size: contain;
+        }
+
+        #content-six {
+            height: 0px;
+            transform: translateY(-173px);
+        }
+
+        .content-sixT {
+            width: 100%;
+        }
+
+        .content-sixM {
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        .content-sixMP {
+            width: 500px;
+            background-color: #fff;
+        }
+
+        .content-sixMT {
+            width: 300px;
+            letter-spacing: 6.3px;
+
+        }
+
+        .content-sixMM {
+            width: 300px;
+            line-height: 40px;
+            letter-spacing: 3.5px;
+
+        }
+
+        .content-sixMD {
+            width: 300px;
+            line-height: 40px;
+
+        }
+
+        .content-sixR {
+            padding-bottom: 10px;
+        }
+
+        .content-sixD {
+            width: 100%;
+            height: 15px;
+            background-image: url('http://petstages.tw/content/img/seperator.png');
+            background-size: contain;
+
+        }
+
+        #content-seven {
+            height: 0px;
+            transform: translateY(-188px);
+        }
+
+        .content-seven {
+            width: 100%;
+        }
+
+        .content-sevenT {
+            width: 100%;
+        }
+
+        .content-sevenM {
+            width: 100%;
+            padding-bottom: 20px;
+        }
+
+        .content-sevenMP {
+            width: 1000px;
+            background-color: #fff;
+
+        }
+
+        .content-sevenMT {
+            width: 1000px;
+            margin-top: 25px;
+
+        }
+
+        .content-sevenMD {
+            width: 100%;
+        }
+
+        .content-sevenMD-img {
+            margin-top: 30px;
+            padding-bottom: 10px;
+        }
+
+        .left {
+            display: inline-block;
+            padding: 10px 10px;
+            background-color: #faa635;
+            font-size: 28px;
+
+        }
+
+        .right {
+            display: inline-block;
+            background-color: #faa635;
+            font-size: 28px;
+
+        }
+
+        .content-sevenD {
+            width: 100%;
+            height: 15px;
+            background-image: url('http://petstages.tw/content/img/seperator.png');
+            background-size: contain;
+
+        }
+
+
+        .footer {
+            width: 100%;
+            background-color: #DCDDDD;
+            padding: 30px 0;
+        }
+
+        .footer-ulT {
+            margin: 0;
+
+        }
+
+        .one,
+        .two,
+        .three,
+        .four {
+            display: inline-block;
+            padding: 10px 20px;
+            padding: 10px;
+            font-size: 28px;
+        }
+
+        .five,
+        .six,
+        .seven,
+        .eight {
+            display: inline-block;
+            padding: 10px 20px;
+            padding: 10px;
+            font-size: 28px;
+        }
+
+        @media screen and (max-width:767px) {
+            .navbar {
+                width: 100%;
+            }
+
+            .container-fluid {
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+
+            </div>
+            <a class="navbar-brand" href="#">
+                <img class="img-fluid" src="img/go-icon-01-01.png" alt="狗GO玩具專賣店">
+            </a>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">首頁
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#content-one">新品上市
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#content-two">限定優惠
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#content-three">抗憂救星
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#content-four">商品專區
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#content-five">關於我們
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#content-six">聯繫我們
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#content-seven">領養資訊
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="slider">
+        <div class="slider-frame slider-frameone"></div>
+        <div class="my-slider">
+            <ul>
+                <li>
+                    <div class="bg-img1"></div>
+                </li>
+                <li>
+                    <div class="bg-img2"></div>
+                </li>
+                <li>
+                    <div class="bg-img3"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="slider-frame"></div>
+    </div>
+
+    <div class="container">
+        <div id="content-one"></div>
+        <div class="content-one">
+            <div class="content-oneT">
+                <h1>新品上市</h1>
+            </div>
+
+            <div class="content-oneM">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="content-oneL">
+                            <div class="content-oneL-img">
+                                <img width="450" src="img/news.png" alt="健齒三連環">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="content-oneR">
+                            <p class="content-oneR-up">健齒三連環</p>
+                            <p class="content-oneR-two">
+                                通過拉扯遊戲，
+                                <br> 加強你與狗狗之間的情感連結
+                                <br>
+                            </p>
+                            <p class="content-oneR-three">
+                                >三環相接讓主人容易握也讓狗狗容易咬
+                                <br> >結合堅固的帆布和繩結增加耐咬強度
+                                <br> >堅固的結構能增強狗狗的肌肉發展
+                                <br> >適合和狗狗玩拉扯遊戲
+                                <br> >適合中、大型犬使用
+                            </p>
+                            <p class="content-oneR-four">
+                                尺寸
+                                <br> L19xW19xH1.5cm
+                            </p>
+                            <p class="content-oneR-down">價格＄350</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-oneD"></div>
+        </div>
+        <div id="content-two"></div>
+        <div class="content-two">
+            <div class="content-twoT">
+                <h1>限時優惠</h1>
+            </div>
+
+            <div class="content-twoM">
+                <div class="col-md-10">
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img width="200" src="img/01-active.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="date">2017-12-10</div>
+                                <div class="type">牙齒保健玩具⚡第二件半價↘</div>
+                                <div class="name">繩結QQ球</div>
+                                <div class="discount">$780</div>
+                                <div class="price">$1040</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img width="200" src="img/02-active.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="date">2017-11-10</div>
+                                <div class="type">拉扯拔河玩具⚡第二件半價↘</div>
+                                <div class="name">小丑呼啦圈</div>
+                                <div class="discount">$520</div>
+                                <div class="price">$700</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img width="200" src="img/03-active.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="date">2017-10-10</div>
+                                <div class="type">室內遊戲玩具⚡第二件半價↘</div>
+                                <div class="name">迷你彩虹拋接環</div>
+                                <div class="discount">$300</div>
+                                <div class="price">$400</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img width="200" src="img/04-active.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="date">2017-09-10</div>
+                                <div class="type">安心舒適玩具⚡第二件半價↘</div>
+                                <div class="name">愛睏狗暖暖墊</div>
+                                <div class="discount">$840</div>
+                                <div class="price">$1120</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img width="200" src="img/05-active.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="date">2017-08-10</div>
+                                <div class="type">慢速進食玩具⚡第二件半價↘</div>
+                                <div class="name">寵物慢食盤</div>
+                                <div class="discount">$675</div>
+                                <div class="price">$900</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="content-twoD"></div>
+        <div id="content-three"></div>
+        <div class="content-three">
+            <div class="content-threeT">
+                <h1>抗憂救星</h1>
+            </div>
+            <div class="content-threerow">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="img-inner">
+                            <img width="150" height="150" src="https://www.hapet.com.tw/wp-content/uploads/2017/04/JW2.jpg" class="attachment-original size-original"
+                                alt="JW 洞洞球 益智玩具 抗憂鬱 分離焦慮症 狗玩具" srcset="https://www.hapet.com.tw/wp-content/uploads/2017/04/JW2.jpg 400w, https://www.hapet.com.tw/wp-content/uploads/2017/04/JW2-100x97.jpg 100w, https://www.hapet.com.tw/wp-content/uploads/2017/04/JW2-300x292.jpg 300w">
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div>
+                            <h2 class="content-threemid">選對益智玩具=找到救星，它能讓狗狗一整天都美好。</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="img-inner">
+                            <img width="150" height="150" src="https://www.hapet.com.tw/wp-content/uploads/2017/04/葫蘆.jpg" class="attachment-original size-original"
+                                alt="KONG 經典葫蘆 葫蘆 益智玩具 抗憂鬱 分離焦慮症 狗玩具" srcset="https://www.hapet.com.tw/wp-content/uploads/2017/04/葫蘆.jpg 400w, https://www.hapet.com.tw/wp-content/uploads/2017/04/葫蘆-100x97.jpg 100w, https://www.hapet.com.tw/wp-content/uploads/2017/04/葫蘆-300x292.jpg 300w">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-threeM">
+                <div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://www.hapet.com.tw/wp-content/uploads/2017/04/臭臭憂鬱眼神-400x400.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="content-threeM-container">
+                                <h3 class="section-title section-title-bold-center">
+                                    <b></b>
+                                    <span class="section-title-main">您總是沒有足夠的時間陪伴牠嗎？</span>
+                                    <b></b>
+                                </h3>
+                                <!-- .section-title -->
+                                <p class="thin-font">
+                                    <span style="font-size: 110%; color: #333333;">您是不是也和小編有著一樣的煩惱呢？</span>
+                                    <br>
+                                    <span style="font-size: 110%; color: #333333;">每次出門上班的時候看見狗狗依依不捨的眼神，</span>
+                                    <br>
+                                    <span style="font-size: 110%; color: #333333;">都會擔心毛孩在家裡會不會無聊或是出現分離焦慮症的症狀呢？</span>
+                                    <br>
+                                    <strong>
+                                        <span style="font-size: 110%; color: #333333;">益智玩具之所以需要出現在毛孩的生活中，</span>
+                                    </strong>
+                                    <br>
+                                    <span style="font-size: 110%; color: #333333;">不僅是因為它能夠讓無聊的狗狗打發時間，
+                                        <strong>減少憂鬱症與分離焦慮症的發生</strong>，</span>
+                                    <br>
+                                    <span style="font-size: 110%; color: #333333;">也能滿足狗狗的
+                                        <strong>探索慾望</strong>與
+                                        <strong>好奇心</strong>，</span>
+                                    <br>
+                                    <span style="font-size: 110%; color: #333333;">除此之外還能
+                                        <strong>提升狗狗的自信</strong>，讓狗兒的
+                                        <strong>情緒更加穩定</strong>唷！</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-threeD"></div>
+        </div>
+        <div id="content-four"></div>
+        <div class="content-four">
+            <div class="content-fourT">
+                <h1>商品專區</h1>
+            </div>
+            <div class="content-four-nav">
+                <nav class="product-nav">
+                    <ul class="nav-container">
+                        <li class="chew ">
+                            <a href="Chew.php">啃咬</a>
+                        </li>
+                        <li class="interact ">
+                            <a href="Interact.php">互動</a>
+                        </li>
+                        <li class="play ">
+                            <a href="Play.php">玩樂</a>
+                        </li>
+                        <li class="soothe ">
+                            <a href="Soothe.php">紓壓</a>
+                        </li>
+                        <li class="feed">
+                            <a href="Feed.php">餵食</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="content-fourM">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="product-imgone">
+                            <div class="product-imgonesize">
+                                <img class="img-fluid" src="img/commodity (1).png" alt="繩結QQ球">
+                                <div>
+                                    <p style="font-size: 36px; color: #333333;">繩結QQ球</p>
+                                    <br>
+                                    <p class="product-imgonep" style="font-size: 24px; color: #333333;">價格$520</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-imgtwo">
+                            <div class="product-imgonesize">
+                                <img class="img-fluid" src="img/commodity (2).png" alt="冰凍酷牙棒">
+                                <div>
+                                    <p style="font-size: 36px; color: #333333;">冰凍酷牙棒</p>
+                                    <br>
+                                    <p class="product-imgonep" style="font-size: 24px; color: #333333;">價格$240</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-imgthree">
+                            <div class="product-imgonesize">
+                                <img class="img-fluid" src="img/commodity (3).png" alt="耐咬扭力帶">
+                                <div>
+                                    <p style="font-size: 36px; color: #333333;">耐咬扭力帶</p>
+                                    <br>
+                                    <p class="product-imgonep" style="font-size: 24px; color: #333333;">價格$450</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-fourD"></div>
+
+        </div>
+        <div id="content-five"></div>
+        <div class="content-five">
+            <div class="content-fiveT">
+                <h1>關於我們</h1>
+            </div>
+            <div class="content-fiveM">
+                <div class="content-fiveMT">
+                    <p style="font-size: 24px;">
+                        狗GO玩具專賣店致力研發各種獨特且創新的寵物玩具，
+                        <br>陪伴寵物在不同成長階段所面臨的各種需求。
+                    </p>
+                </div>
+                <div class="content-fiveLR">
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <div class="content-oneL-img">
+                                <img class="content-fiveL-img" width="400" src="img/map.jpg" alt="地圖">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="content-fiveR-up">狗GO玩具專賣店</p>
+                            <p class="content-fiveR-two">
+                                狗GO玩具專賣店總部設於美國伊利諾州
+                                <br>（芝加哥北邊約37公里），擁有專屬設計
+                                <br>團隊、專業顧問及生產基地，是世界知名
+                                <br>的寵物品牌，提供高品質、安全、耐用的
+                                <br>寵物玩具，適合各種不同年齡層及不同體
+                                <br>中國總代理，並設立中國總部-上海億載貿
+                                <br>易有限公司，歡迎有意推廣狗GO玩具專賣
+                                <br>店的地區經銷商，與我們洽詢合作事宜。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-fiveD"></div>
+        </div>
+        <div id="content-six"></div>
+        <div class="content-six">
+            <div class="content-sixT">
+                <h1>聯繫我們</h1>
+            </div>
+            <div class="content-sixM">
+                <div class="content-sixMP">
+                    <p class="content-sixMT" style="font-size: 20px;">
+                        台北市信義區松壽路16號
+                        <br>週一至週五9:30~17:00
+                    </p>
+                    <p class="content-sixMM" style="font-size: 26px;">
+                        TEL：02-7728-7668
+                    </p>
+                    <p class="content-sixMD" style="font-size: 26px;">
+                        Email：hi@petstages.tw
+                    </p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="content-sixL">
+                                <a href="">
+                                    <img width="40" height="40" src="img/fb-icon.png" alt="fb-icon">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="content-sixR">
+                                <a href="">
+                                    <img width="40" height="40" src="img/line-icon.jpg" alt="line-icon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-sixD"></div>
+        </div>
+        <div id="content-seven"></div>
+        <div class="content-seven">
+            <div class="content-sevenT">
+                <h1>領養資訊</h1>
+            </div>
+            <div class="content-sevenM">
+                <div class="content-sevenMP">
+                    <p class="content-sevenMT" style="font-size: 38px;">
+                        想養狗狗可以去各地收容所領養喔^ __ ^
+                    </p>
+                </div>
+                <div class="content-sevenMD">
+                    <img class="content-sevenMD-img" width="700" src="img/adopt.jpg" alt="以領養代替購買">
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="left">
+                            <a href="http://www.animal.taichung.gov.tw/lp.asp?CtNode=7813&CtUnit=1687&BaseDSD=57&mp=119020" target="_blank">台中市動物保護防疫處</a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="left">
+                            <a href="http://animal-adoption.coa.gov.tw/index.php/animal/animal_info/?p=7&id=51582&s_area=ALL&s_kind=ALL&s_bodytype=MEDIUM&s_age=ALL&s_color=%E5%85%B6%E4%BB%96&s_sex=ALL&num=8"
+                                target="_blank">台中市動物保護防疫處</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="content-sevenD"></div>
+    <div class="footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="row align-items-center">
+                        <div class="col-md-3">
+                            <div class="footerL">
+                                <img class="img-fluid" width="140" src="img/go-icon-01-01.png" alt="狗GO玩具專賣店">
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="footerR">
+                                <ul class="footer-ulT">
+                                    <li class="one">
+                                        <a href="#">首頁</a>
+                                    </li>
+                                    <li class="two">
+                                        <a href="#content-one">新品上市</a>
+                                    </li>
+                                    <li class="three">
+                                        <a href="#content-two">限時優惠</a>
+                                    </li>
+                                    <li class="four">
+                                        <a href="#content-three">抗憂救星</a>
+                                    </li>
+                                </ul>
+                                <ul class="footer-ulD">
+                                    <li class="five">
+                                        <a href="#content-four">商品專區</a>
+                                    </li>
+                                    <li class="six">
+                                        <a href="#content-five">關於我們</a>
+                                    </li>
+                                    <li class="seven">
+                                        <a href="#content-six">聯繫我們</a>
+                                    </li>
+                                    <li class="eight">
+                                        <a href="#content-seven">領養資訊</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/unslider-min.js"></script>
+        <!-- but with the right path! -->
+        <script>
+            $(document).ready(function ($) {
+                $('.my-slider').unslider({
+                    autoplay: true,
+                    arrows: {
+                        //  Unslider default behaviour
+                        prev: '<a class="unslider-arrow prev"><i class="fas fa-angle-left fa-2x"></i></a>',
+                        next: '<a class="unslider-arrow next"><i class="fas fa-angle-right fa-2x"></i></a>',
+                    },
+                    animation: 'fade',
+                    animateHeight: true
+                });
+            });
+        </script>
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function () {
+                $('a[href^="#"]').on('click', function (e) {
+                    e.preventDefault();
+
+                    var target = this.hash;
+                    var $target = $(target);
+
+                    $('html, body').stop().animate({
+                        'scrollTop': $target.offset().top
+                    }, 900, 'swing', function () {
+                        window.location.hash = target;
+                    });
+                });
+            });
+        </script>
+</body>
+
+</html>
