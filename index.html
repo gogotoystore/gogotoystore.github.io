@@ -3,17 +3,18 @@
 
 <head>
     <!-- Required meta tags -->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/unslider.css">
     <link rel="stylesheet" href="css/unslider-dots.css">
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
-
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="stylesheet" href="css/lightbox.min.css">
 
 
     <title>狗GO玩具專賣店</title>
@@ -171,7 +172,7 @@
         }
 
         .date {
-            font-size: 10px;
+            font-size: 16px;
         }
 
         .type {
@@ -190,7 +191,7 @@
         }
 
         .price {
-            font-size: 12px;
+            font-size: 20px;
             color: #666;
             text-decoration: line-through;
             padding-bottom: 10px;
@@ -328,7 +329,7 @@
         }
 
         .product-nav ul li.play a {
-            background-color: #b3a2ce;
+            background-color: #6cf;
             border-radius: 5%;
             background-position: 0 -60px;
             padding: 10px;
@@ -336,7 +337,7 @@
         }
 
         .product-nav ul li.soothe a {
-            background-color: #6cf;
+            background-color: #0096de;
             border-radius: 5%;
             background-position: 0 -120px;
             padding: 10px;
@@ -344,7 +345,7 @@
         }
 
         .product-nav ul li.feed a {
-            background-color: #0096de;
+            background-color: #b3a2ce;
             border-radius: 5%;
             background-position: 0 -420px;
             padding: 10px;
@@ -377,6 +378,11 @@
         #content-five {
             height: 0px;
             transform: translateY(-173px);
+        }
+
+        #map {
+            height: 240px;
+            width: 100%;
         }
 
         .content-fiveT {
@@ -485,6 +491,7 @@
 
         .content-seven {
             width: 100%;
+            padding-bottom: 10px;
         }
 
         .content-sevenT {
@@ -515,20 +522,23 @@
         .content-sevenMD-img {
             margin-top: 30px;
             padding-bottom: 10px;
+
         }
 
         .left {
             display: inline-block;
             padding: 10px 10px;
-            background-color: #faa635;
+            background-color: #0096de;
             font-size: 28px;
+
 
         }
 
         .right {
             display: inline-block;
-            background-color: #faa635;
+            background-color: #0096de;
             font-size: 28px;
+
 
         }
 
@@ -537,6 +547,7 @@
             height: 15px;
             background-image: url('http://petstages.tw/content/img/seperator.png');
             background-size: contain;
+
 
         }
 
@@ -709,74 +720,105 @@
             </div>
 
             <div class="content-twoM">
-                <div class="col-md-10">
+                <div class="container col-md-8 col-md-offset-2">
                     <div class="item">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-3">
                                 <img width="200" src="img/01-active.png" alt="" class="img-fluid">
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-9">
                                 <div class="date">2017-12-10</div>
                                 <div class="type">牙齒保健玩具⚡第二件半價↘</div>
                                 <div class="name">繩結QQ球</div>
-                                <div class="discount">$780</div>
-                                <div class="price">$1040</div>
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="discount">$780</div>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <div class="price">$1040</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-3">
                                 <img width="200" src="img/02-active.png" alt="" class="img-fluid">
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-9">
                                 <div class="date">2017-11-10</div>
                                 <div class="type">拉扯拔河玩具⚡第二件半價↘</div>
                                 <div class="name">小丑呼啦圈</div>
-                                <div class="discount">$520</div>
-                                <div class="price">$700</div>
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="discount">$520</div>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <div class="price">$700</div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-3">
                                 <img width="200" src="img/03-active.png" alt="" class="img-fluid">
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-9">
                                 <div class="date">2017-10-10</div>
                                 <div class="type">室內遊戲玩具⚡第二件半價↘</div>
                                 <div class="name">迷你彩虹拋接環</div>
-                                <div class="discount">$300</div>
-                                <div class="price">$400</div>
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="discount">$300</div>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <div class="price">$400</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-3">
                                 <img width="200" src="img/04-active.png" alt="" class="img-fluid">
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-9">
                                 <div class="date">2017-09-10</div>
                                 <div class="type">安心舒適玩具⚡第二件半價↘</div>
                                 <div class="name">愛睏狗暖暖墊</div>
-                                <div class="discount">$840</div>
-                                <div class="price">$1120</div>
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="discount">$840</div>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <div class="price">$1120</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-3">
                                 <img width="200" src="img/05-active.png" alt="" class="img-fluid">
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-9">
                                 <div class="date">2017-08-10</div>
                                 <div class="type">慢速進食玩具⚡第二件半價↘</div>
                                 <div class="name">寵物慢食盤</div>
-                                <div class="discount">$675</div>
-                                <div class="price">$900</div>
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="discount">$675</div>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <div class="price">$900</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -800,7 +842,7 @@
                     </div>
                     <div class="col-md-8">
                         <div>
-                            <h2 class="content-threemid">選對益智玩具=找到救星，它能讓狗狗一整天都美好。</h2>
+                            <h3 class="content-threemid">選對益智玩具=找到救星，它能讓狗狗一整天都美好。</h3>
                         </div>
                     </div>
                     <div class="col-md-2">
@@ -821,7 +863,7 @@
                             <div class="content-threeM-container">
                                 <h3 class="section-title section-title-bold-center">
                                     <b></b>
-                                    <span class="section-title-main">您總是沒有足夠的時間陪伴牠嗎？</span>
+                                    <span class="section-title-main" style="color:rgb(63, 4, 59);">您總是沒有足夠的時間陪伴牠嗎？</span>
                                     <b></b>
                                 </h3>
                                 <!-- .section-title -->
@@ -836,7 +878,9 @@
                                         <span style="font-size: 110%; color: #333333;">益智玩具之所以需要出現在毛孩的生活中，</span>
                                     </strong>
                                     <br>
-                                    <span style="font-size: 110%; color: #333333;">不僅是因為它能夠讓無聊的狗狗打發時間，
+                                    <span style="font-size: 110%; color: #333333;">不僅是因為它能夠讓無聊的狗狗打發時間，</span>
+                                    <br>
+                                    <span style="font-size: 110%; color: #333333;">
                                         <strong>減少憂鬱症與分離焦慮症的發生</strong>，</span>
                                     <br>
                                     <span style="font-size: 110%; color: #333333;">也能滿足狗狗的
@@ -863,19 +907,19 @@
                 <nav class="product-nav">
                     <ul class="nav-container">
                         <li class="chew ">
-                            <a href="Chew.php">啃咬</a>
+                            <a href="#" style="color:white;">啃咬</a>
                         </li>
                         <li class="interact ">
-                            <a href="Interact.php">互動</a>
+                            <a href="#" style="color:white;">互動</a>
                         </li>
                         <li class="play ">
-                            <a href="Play.php">玩樂</a>
+                            <a href="#" style="color:white;">玩樂</a>
                         </li>
                         <li class="soothe ">
-                            <a href="Soothe.php">紓壓</a>
+                            <a href="#" style="color:white;">紓壓</a>
                         </li>
                         <li class="feed">
-                            <a href="Feed.php">餵食</a>
+                            <a href="#" style="color:white;">餵食</a>
                         </li>
                     </ul>
                 </nav>
@@ -885,7 +929,10 @@
                     <div class="col-md-4">
                         <div class="product-imgone">
                             <div class="product-imgonesize">
-                                <img class="img-fluid" src="img/commodity (1).png" alt="繩結QQ球">
+                                <a href="img/01-active.png" data-lightbox="image-1" data-title="繩結QQ球">
+                                    <img class="img-fluid" src="img/commodity (1).png" alt="繩結QQ球">
+                                </a>
+
                                 <div>
                                     <p style="font-size: 36px; color: #333333;">繩結QQ球</p>
                                     <br>
@@ -897,7 +944,9 @@
                     <div class="col-md-4">
                         <div class="product-imgtwo">
                             <div class="product-imgonesize">
-                                <img class="img-fluid" src="img/commodity (2).png" alt="冰凍酷牙棒">
+                                <a href="img/lightbox(2).png" data-lightbox="image-1" data-title="冰凍酷牙棒">
+                                    <img class="img-fluid" src="img/commodity (2).png" alt="冰凍酷牙棒">
+                                </a>
                                 <div>
                                     <p style="font-size: 36px; color: #333333;">冰凍酷牙棒</p>
                                     <br>
@@ -909,11 +958,13 @@
                     <div class="col-md-4">
                         <div class="product-imgthree">
                             <div class="product-imgonesize">
-                                <img class="img-fluid" src="img/commodity (3).png" alt="耐咬扭力帶">
+                                <a href="img/lightbox(3).png" data-lightbox="image-1" data-title="比漾咬咬骨">
+                                    <img class="img-fluid" src="img/commodity (3).png" alt="比漾咬咬骨">
+                                </a>
                                 <div>
-                                    <p style="font-size: 36px; color: #333333;">耐咬扭力帶</p>
+                                    <p style="font-size: 36px; color: #333333;">比漾咬咬骨</p>
                                     <br>
-                                    <p class="product-imgonep" style="font-size: 24px; color: #333333;">價格$450</p>
+                                    <p class="product-imgonep" style="font-size: 24px; color: #333333;">價格$180</p>
                                 </div>
                             </div>
                         </div>
@@ -930,9 +981,8 @@
             </div>
             <div class="content-fiveM">
                 <div class="content-fiveMT">
-                    <p style="font-size: 24px;">
-                        狗GO玩具專賣店致力研發各種獨特且創新的寵物玩具，
-                        <br>陪伴寵物在不同成長階段所面臨的各種需求。
+                    <p style="font-size: 24px;color:rgb(63, 4, 59);">
+                        狗GO玩具專賣店致力研發各種獨特且創新的寵物玩具，陪伴寵物在不同成長階段所面臨的各種需求。
                     </p>
                 </div>
                 <div class="content-fiveLR">
@@ -940,20 +990,19 @@
                         <div class="col-md-6">
 
                             <div class="content-oneL-img">
-                                <img class="content-fiveL-img" width="400" src="img/map.jpg" alt="地圖">
+                                <div id="map"></div>
+
                             </div>
                         </div>
                         <div class="col-md-6">
                             <p class="content-fiveR-up">狗GO玩具專賣店</p>
                             <p class="content-fiveR-two">
-                                狗GO玩具專賣店總部設於美國伊利諾州
-                                <br>（芝加哥北邊約37公里），擁有專屬設計
-                                <br>團隊、專業顧問及生產基地，是世界知名
-                                <br>的寵物品牌，提供高品質、安全、耐用的
-                                <br>寵物玩具，適合各種不同年齡層及不同體
-                                <br>中國總代理，並設立中國總部-上海億載貿
-                                <br>易有限公司，歡迎有意推廣狗GO玩具專賣
-                                <br>店的地區經銷商，與我們洽詢合作事宜。
+                                狗GO玩具專賣店設於台中市豐原區，
+                                <br>擁有專屬設計團隊、專業顧問及生產基地，
+                                <br>是世界知名的寵物品牌，
+                                <br>提供高品質、安全、耐用的寵物玩具，
+                                <br>適合各種不同年齡層及不同體型大小的寵物。
+                                <br>歡迎大家來店裡參觀選購。
                             </p>
                         </div>
                     </div>
@@ -967,34 +1016,38 @@
                 <h1>聯繫我們</h1>
             </div>
             <div class="content-sixM">
-                <div class="content-sixMP">
+                <div class="container col-md-4 col-md-offset-4">
                     <p class="content-sixMT" style="font-size: 20px;">
-                        台北市信義區松壽路16號
+                        台中市豐原區上益路20號
                         <br>週一至週五9:30~17:00
                     </p>
                     <p class="content-sixMM" style="font-size: 26px;">
-                        TEL：02-7728-7668
+                        TEL：04-1234-5678
                     </p>
                     <p class="content-sixMD" style="font-size: 26px;">
-                        Email：hi@petstages.tw
+                        Email：go@toystore.tw
                     </p>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="content-sixL">
-                                <a href="">
+                                <a href="https://www.facebook.com/%E7%8B%97go%E7%8E%A9%E5%85%B7%E5%B0%88%E8%B3%A3%E5%BA%97-101259664029204/?modal=admin_todo_tour"
+                                    target="_blank">
                                     <img width="40" height="40" src="img/fb-icon.png" alt="fb-icon">
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="content-sixR">
-                                <a href="">
-                                    <img width="40" height="40" src="img/line-icon.jpg" alt="line-icon">
+                                <a href="https://line.me/R/ti/p/%40cis4699h" target="_blank">
+                                    <img height="36" border="0" alt="加入好友" src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png">
                                 </a>
+
                             </div>
                         </div>
+
                     </div>
                 </div>
+
             </div>
             <div class="content-sixD"></div>
         </div>
@@ -1003,27 +1056,28 @@
             <div class="content-sevenT">
                 <h1>領養資訊</h1>
             </div>
-            <div class="content-sevenM">
+            <div class="container col-md-8 col-md-offset-2">
                 <div class="content-sevenMP">
                     <p class="content-sevenMT" style="font-size: 38px;">
                         想養狗狗可以去各地收容所領養喔^ __ ^
                     </p>
                 </div>
                 <div class="content-sevenMD">
-                    <img class="content-sevenMD-img" width="700" src="img/adopt.jpg" alt="以領養代替購買">
+                    <img class="content-sevenMD-img" width="670" src="img/adopt.jpg" alt="以領養代替購買">
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="left">
-                            <a href="http://www.animal.taichung.gov.tw/lp.asp?CtNode=7813&CtUnit=1687&BaseDSD=57&mp=119020" target="_blank">台中市動物保護防疫處</a>
+                            <a href="http://www.animal.taichung.gov.tw/lp.asp?CtNode=7813&CtUnit=1687&BaseDSD=57&mp=119020" target="_blank" style="color:black;">台中市動物保護防疫處</a>
                         </div>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-6">
                         <div class="left">
                             <a href="http://animal-adoption.coa.gov.tw/index.php/animal/animal_info/?p=7&id=51582&s_area=ALL&s_kind=ALL&s_bodytype=MEDIUM&s_age=ALL&s_color=%E5%85%B6%E4%BB%96&s_sex=ALL&num=8"
-                                target="_blank">台中市動物保護防疫處</a>
+                                target="_blank" style="color:black;">全國推廣動物認養平台</a>
                         </div>
                     </div>
+
 
                 </div>
             </div>
@@ -1045,30 +1099,30 @@
                             <div class="footerR">
                                 <ul class="footer-ulT">
                                     <li class="one">
-                                        <a href="#">首頁</a>
+                                        <a href="#" style="text-decoration:none;color:black;">首頁</a>
                                     </li>
                                     <li class="two">
-                                        <a href="#content-one">新品上市</a>
+                                        <a href="#content-one" style="text-decoration:none;color:black;">新品上市</a>
                                     </li>
                                     <li class="three">
-                                        <a href="#content-two">限時優惠</a>
+                                        <a href="#content-two" style="text-decoration:none;color:black;">限時優惠</a>
                                     </li>
                                     <li class="four">
-                                        <a href="#content-three">抗憂救星</a>
+                                        <a href="#content-three" style="text-decoration:none;color:black;">抗憂救星</a>
                                     </li>
                                 </ul>
                                 <ul class="footer-ulD">
                                     <li class="five">
-                                        <a href="#content-four">商品專區</a>
+                                        <a href="#content-four" style="text-decoration:none;color:black;">商品專區</a>
                                     </li>
                                     <li class="six">
-                                        <a href="#content-five">關於我們</a>
+                                        <a href="#content-five" style="text-decoration:none;color:black;">關於我們</a>
                                     </li>
                                     <li class="seven">
-                                        <a href="#content-six">聯繫我們</a>
+                                        <a href="#content-six" style="text-decoration:none;color:black;">聯繫我們</a>
                                     </li>
                                     <li class="eight">
-                                        <a href="#content-seven">領養資訊</a>
+                                        <a href="#content-seven" style="text-decoration:none;color:black;">領養資訊</a>
                                     </li>
                                 </ul>
                             </div>
@@ -1088,11 +1142,13 @@
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
             crossorigin="anonymous"></script>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
             crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
         <script src="js/unslider-min.js"></script>
         <!-- but with the right path! -->
         <script>
@@ -1109,8 +1165,13 @@
                 });
             });
         </script>
+
+
         <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"></script>
+
+
+
         <script>
             $(document).ready(function () {
                 $('a[href^="#"]').on('click', function (e) {
@@ -1127,6 +1188,70 @@
                 });
             });
         </script>
+        <script src="js/lightbox.min.js"></script>
+        <script>
+            lightbox.option({
+                'resizeDuration': 200,
+                'wrapAround': true,
+                'albumLabel': "%1 of %2"
+            })
+        </script>
+        <script>
+            function initMap() {
+                var uluru = { lat: 24.001948, lng: 121.623175 };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 20,
+                    center: uluru
+                });
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACnwSa1TDocVBIlVFmcT-Lp1ZsKSjEqmM&callback=initMap">
+        </script>
+        <!-- 回到頂端按鈕 start -->
+<script>
+        //<![CDATA[
+        (function () {
+        $("body").append("<img id='goTopButton' style='display: none; z-index: 5; cursor: pointer;' title='回到頂端'/>");
+        var img="https://videoindustrial.com/wp-content/themes/carylon/images/TopButton.png",
+        locatioin = 1/2, // 按鈕出現在螢幕的高度
+        right = 10, // 距離右邊 px 值
+        opacity = 0.3, // 透明度
+        speed = 500, // 捲動速度
+        $button = $("#goTopButton"),
+        $body = $(document),
+        $win = $(window);
+        $button.attr("src", img);
+        $button.on({
+        mouseover: function() {$button.css("opacity", 1);},
+        mouseout: function() {$button.css("opacity", opacity);},
+        click: function() {$("html, body").animate({scrollTop: 0}, speed);}
+        });
+        window.goTopMove = function () {
+        var scrollH = $body.scrollTop(),
+        winH = $win.height(),
+        css = {"top": winH * locatioin + "px", "position": "fixed", "right": right, "opacity": opacity};
+        if(scrollH > 20) {
+        $button.css(css);
+        $button.fadeIn("slow");
+        } else {
+        $button.fadeOut("slow");
+        }
+        };
+        $win.on({
+        scroll: function() {goTopMove();},
+        resize: function() {goTopMove();}
+        });
+        } )();
+        //]]>
+        </script>
+        <!-- 回到頂端按鈕 end, Design by WFU BLOG -->
+        
+
+
 </body>
 
 </html>
