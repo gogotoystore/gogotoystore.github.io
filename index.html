@@ -33,6 +33,10 @@
 
         }
 
+        .navbar-toggle{
+            display:none;
+        }
+
         .navbar {
             position: fixed;
             width: 100%;
@@ -687,7 +691,7 @@
                 width: 100%;
             }
 
-            .navbar-brand{
+            .navbar-brand {
                 width: 100px;
             }
 
@@ -706,49 +710,113 @@
                 width: 100%;
             }
 
-            .content-sixMT{
+            .content-sixMT {
                 width: 100%;
             }
 
-            .content-sixMM{
+            .content-sixMM {
                 width: 100%;
             }
 
-            .content-sixMD{
+            .content-sixMD {
                 width: 100%;
             }
 
-            .content-oneR-up{
+            .content-oneR-up {
                 font-size: 30px;
             }
-            .content-oneR-two{
+            .content-oneR-two {
                 font-size: 20px;
             }
-            .content-oneR-three{
+            .content-oneR-three {
                 font-size: 16px;
             }
-            .content-oneR-four{
+            .content-oneR-four {
                 font-size: 20px;
             }
-            .content-oneR-down{
+            .content-oneR-down {
                 font-size: 20px;
             }
 
-            .content-threemid{
+            .content-threemid {
                 font-size: 22px;
             }
 
-            .type{
+            .type {
                 font-size: 20px;
             }
 
-            .thin-font{
+            .thin-font {
                 font-size: 20px;
             }
 
-            .left{
+            .left {
                 font-size: 18px;
             }
+
+            .bg-img1 {
+                width: 100%;
+                height: 80px;
+                background-image: url('http://petstages.tw/content/img/2016_Slider.jpg');
+                background-size: contain;
+            }
+
+            .bg-img2 {
+                width: 100%;
+                height: 80px;
+                background-image: url('http://petstages.tw/content/img/SlingSock_Slider.jpg');
+                background-size: contain;
+            }
+
+            .bg-img3 {
+                width: 100%;
+                height: 80px;
+                background-image: url('http://petstages.tw/content/img/BeyondBone_Slider.jpg');
+                background-size: contain;
+            }
+            .unslider-arrow {
+                top: 60%;
+            }
+
+            .navbar-header {
+                float: none;
+            }
+            .navbar-toggle {
+                display: block;
+            }
+
+            .navbar-collapse {
+                border-top: 1px solid transparent;
+                box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            }
+            .navbar-collapse.collapse {
+                display: none!important;
+            }
+            .navbar-nav>li {
+                float: none;
+            }
+            .navbar-nav>li>a {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .navbar-text {
+                float: none;
+                margin: 15px 0;
+            }
+            /* since 3.1.0 */
+            .navbar-collapse.collapse.in {
+                display: block!important;
+            }
+            .collapsing {
+                overflow: hidden!important;
+            }
+
+            .navbar-toggle{
+                display: inline;
+        }
+
+
+
         }
     </style>
 </head>
@@ -756,15 +824,16 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
         <div class="container">
-            <div class="d-flex justify-content-between">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <i class="fas fa-bars"></i> 
+                    </button>
 
-            </div>
             <a class="navbar-brand" href="#">
                 <img class="img-fluid" src="img/go-icon-01-01.png" alt="狗GO玩具專賣店">
             </a>
 
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">首頁
@@ -1562,7 +1631,7 @@
             (function () {
                 $("body").append("<img id='goTopButton' style='display: none; z-index: 5; cursor: pointer;' title='回到頂端'/>");
                 var img = "https://videoindustrial.com/wp-content/themes/carylon/images/TopButton.png",
-                    locatioin = 2/ 3, // 按鈕出現在螢幕的高度
+                    locatioin = 2 / 3, // 按鈕出現在螢幕的高度
                     right = 10, // 距離右邊 px 值
                     opacity = 0.3, // 透明度
                     speed = 500, // 捲動速度
