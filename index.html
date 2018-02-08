@@ -55,10 +55,6 @@
             padding-top: 173.72px;
         }
 
-        .unslider {
-            position: relative;
-
-        }
 
         .bg-img1 {
             height: 53vh;
@@ -115,7 +111,6 @@
 
         content-oneM {
             width: 100%;
-            height: 70vh;
             float: left;
         }
 
@@ -299,8 +294,13 @@
 
         }
 
+        .content-fourM {
+            width: 100%;
+            float: left;
+        }
 
-        .product-nav ul {
+
+        /*.product-nav ul {
             margin: 0;
         }
 
@@ -351,7 +351,7 @@
             padding: 10px;
             font-size: 28px;
 
-        }
+        }*/
 
         .product-imgone {
             text-align: center;
@@ -367,6 +367,104 @@
             padding-bottom: 10px;
         }
 
+        .nav-tabs {
+            border-bottom: none;
+        }
+
+        .nav-tabs .nav-item.show .nav-link,
+        .nav-tabs .nav-link.active {
+            color: white;
+            background-color: #faa635;
+            border: 1px solid transparent;
+        }
+
+        .nav-tabs .nav-link:focus,
+        .nav-tabs .nav-link:hover {
+            border: 1px solid transparent;
+        }
+
+        .content-Contactus ul li {
+            font-size: 24px;
+
+        }
+
+        .nav-link01 {
+            color: white;
+            background-color: #faa635;
+        }
+
+        .nav-link active {
+            color: white;
+            background-color: #faa635;
+        }
+
+        #nav-link active {
+            height: 0px;
+            transform: translateY(-500px);
+        }
+
+        .nav-link02 {
+            color: white;
+            background-color: #8dc63f;
+            font-size: 24px;
+            font-weight: normal;
+            line-height: normal;
+            display: block;
+            padding: .5rem 1rem;
+            border-top-left-radius: .25rem;
+            border-top-right-radius: .25rem;
+            border: 1px solid transparent;
+        }
+
+        .nav-link03 {
+            color: white;
+            background-color: #6cf;
+            font-size: 24px;
+            font-weight: normal;
+            line-height: normal;
+            display: block;
+            padding: .5rem 1rem;
+            border-top-left-radius: .25rem;
+            border-top-right-radius: .25rem;
+            border: 1px solid transparent;
+        }
+
+        .nav-link04 {
+            color: white;
+            background-color: #0096de;
+            font-size: 24px;
+            font-weight: normal;
+            line-height: normal;
+            display: block;
+            padding: .5rem 1rem;
+            border-top-left-radius: .25rem;
+            border-top-right-radius: .25rem;
+            border: 1px solid transparent;
+        }
+
+        .nav-link05 {
+            color: white;
+            background-color: #b3a2ce;
+            font-size: 24px;
+            font-weight: normal;
+            line-height: normal;
+            display: block;
+            padding: .5rem 1rem;
+            border-top-left-radius: .25rem;
+            border-top-right-radius: .25rem;
+            border: 1px solid transparent;
+        }
+
+
+
+        a:hover {
+            color: white;
+            text-decoration: none;
+        }
+
+
+
+
         .content-fourD {
             width: 100%;
             height: 15px;
@@ -377,7 +475,7 @@
 
         #content-five {
             height: 0px;
-            transform: translateY(-173px);
+            transform: translateY(497px);
         }
 
         #map {
@@ -530,6 +628,7 @@
             padding: 10px 10px;
             background-color: #0096de;
             font-size: 28px;
+            margin-top: 10px;
 
 
         }
@@ -588,15 +687,73 @@
                 width: 100%;
             }
 
+            .navbar-brand{
+                width: 100px;
+            }
+
             .container-fluid {
                 padding: 0;
+            }
+            .container {
+                width: 100%;
+            }
+
+            .content-sevenMP {
+                width: 100%;
+            }
+
+            .content-fourM ul {
+                width: 100%;
+            }
+
+            .content-sixMT{
+                width: 100%;
+            }
+
+            .content-sixMM{
+                width: 100%;
+            }
+
+            .content-sixMD{
+                width: 100%;
+            }
+
+            .content-oneR-up{
+                font-size: 30px;
+            }
+            .content-oneR-two{
+                font-size: 20px;
+            }
+            .content-oneR-three{
+                font-size: 16px;
+            }
+            .content-oneR-four{
+                font-size: 20px;
+            }
+            .content-oneR-down{
+                font-size: 20px;
+            }
+
+            .content-threemid{
+                font-size: 22px;
+            }
+
+            .type{
+                font-size: 20px;
+            }
+
+            .thin-font{
+                font-size: 20px;
+            }
+
+            .left{
+                font-size: 18px;
             }
         }
     </style>
 </head>
 
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
         <div class="container">
             <div class="d-flex justify-content-between">
@@ -653,6 +810,7 @@
             </div>
         </div>
     </nav>
+
     <div class="slider">
         <div class="slider-frame slider-frameone"></div>
         <div class="my-slider">
@@ -683,7 +841,7 @@
                     <div class="col-md-6">
                         <div class="content-oneL">
                             <div class="content-oneL-img">
-                                <img width="450" src="img/news.png" alt="健齒三連環">
+                                <img class="img-fluid" width="450" src="img/news.png" alt="健齒三連環">
                             </div>
                         </div>
                     </div>
@@ -731,10 +889,10 @@
                                 <div class="type">牙齒保健玩具⚡第二件半價↘</div>
                                 <div class="name">繩結QQ球</div>
                                 <div class="row">
-                                    <div class="col-md-2">
+                                    <div class="col-md-2 col-3">
                                         <div class="discount">$780</div>
                                     </div>
-                                    <div class="col-md-10">
+                                    <div class="col-md-10 col-3">
                                         <div class="price">$1040</div>
                                     </div>
                                 </div>
@@ -751,10 +909,10 @@
                                 <div class="type">拉扯拔河玩具⚡第二件半價↘</div>
                                 <div class="name">小丑呼啦圈</div>
                                 <div class="row">
-                                    <div class="col-md-2">
+                                    <div class="col-md-2 col-3">
                                         <div class="discount">$520</div>
                                     </div>
-                                    <div class="col-md-10">
+                                    <div class="col-md-10 col-3">
                                         <div class="price">$700</div>
                                     </div>
                                 </div>
@@ -772,10 +930,10 @@
                                 <div class="type">室內遊戲玩具⚡第二件半價↘</div>
                                 <div class="name">迷你彩虹拋接環</div>
                                 <div class="row">
-                                    <div class="col-md-2">
+                                    <div class="col-md-2 col-3">
                                         <div class="discount">$300</div>
                                     </div>
-                                    <div class="col-md-10">
+                                    <div class="col-md-10 col-3">
                                         <div class="price">$400</div>
                                     </div>
                                 </div>
@@ -792,10 +950,10 @@
                                 <div class="type">安心舒適玩具⚡第二件半價↘</div>
                                 <div class="name">愛睏狗暖暖墊</div>
                                 <div class="row">
-                                    <div class="col-md-2">
+                                    <div class="col-md-2 col-3">
                                         <div class="discount">$840</div>
                                     </div>
-                                    <div class="col-md-10">
+                                    <div class="col-md-10 col-3">
                                         <div class="price">$1120</div>
                                     </div>
                                 </div>
@@ -812,10 +970,10 @@
                                 <div class="type">慢速進食玩具⚡第二件半價↘</div>
                                 <div class="name">寵物慢食盤</div>
                                 <div class="row">
-                                    <div class="col-md-2">
+                                    <div class="col-md-2 col-3">
                                         <div class="discount">$675</div>
                                     </div>
-                                    <div class="col-md-10">
+                                    <div class="col-md-10 col-3">
                                         <div class="price">$900</div>
                                     </div>
                                 </div>
@@ -835,7 +993,7 @@
             <div class="content-threerow">
                 <div class="row">
                     <div class="col-md-2">
-                        <div class="img-inner">
+                        <div>
                             <img width="150" height="150" src="https://www.hapet.com.tw/wp-content/uploads/2017/04/JW2.jpg" class="attachment-original size-original"
                                 alt="JW 洞洞球 益智玩具 抗憂鬱 分離焦慮症 狗玩具" srcset="https://www.hapet.com.tw/wp-content/uploads/2017/04/JW2.jpg 400w, https://www.hapet.com.tw/wp-content/uploads/2017/04/JW2-100x97.jpg 100w, https://www.hapet.com.tw/wp-content/uploads/2017/04/JW2-300x292.jpg 300w">
                         </div>
@@ -846,7 +1004,7 @@
                         </div>
                     </div>
                     <div class="col-md-2">
-                        <div class="img-inner">
+                        <div>
                             <img width="150" height="150" src="https://www.hapet.com.tw/wp-content/uploads/2017/04/葫蘆.jpg" class="attachment-original size-original"
                                 alt="KONG 經典葫蘆 葫蘆 益智玩具 抗憂鬱 分離焦慮症 狗玩具" srcset="https://www.hapet.com.tw/wp-content/uploads/2017/04/葫蘆.jpg 400w, https://www.hapet.com.tw/wp-content/uploads/2017/04/葫蘆-100x97.jpg 100w, https://www.hapet.com.tw/wp-content/uploads/2017/04/葫蘆-300x292.jpg 300w">
                         </div>
@@ -903,182 +1061,384 @@
             <div class="content-fourT">
                 <h1>商品專區</h1>
             </div>
-            <div class="content-four-nav">
-                <nav class="product-nav">
-                    <ul class="nav-container">
-                        <li class="chew ">
-                            <a href="#" style="color:white;">啃咬</a>
-                        </li>
-                        <li class="interact ">
-                            <a href="#" style="color:white;">互動</a>
-                        </li>
-                        <li class="play ">
-                            <a href="#" style="color:white;">玩樂</a>
-                        </li>
-                        <li class="soothe ">
-                            <a href="#" style="color:white;">紓壓</a>
-                        </li>
-                        <li class="feed">
-                            <a href="#" style="color:white;">餵食</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
             <div class="content-fourM">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="product-imgone">
-                            <div class="product-imgonesize">
-                                <a href="img/01-active.png" data-lightbox="image-1" data-title="繩結QQ球">
-                                    <img class="img-fluid" src="img/commodity (1).png" alt="繩結QQ球">
-                                </a>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link01 active" id="chew-tab" data-toggle="tab" href="#chew" role="tab" aria-controls="chew" aria-selected="true">啃咬</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link02" id="interact-tab" data-toggle="tab" href="#interact" role="tab" aria-controls="interact" aria-selected="false">互動</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link03" id="play-tab" data-toggle="tab" href="#play" role="tab" aria-controls="play" aria-selected="false">玩樂</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link04" id="soothe-tab" data-toggle="tab" href="#soothe" role="tab" aria-controls="soothe" aria-selected="false">紓壓</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link05" id="feed-tab" data-toggle="tab" href="#feed" role="tab" aria-controls="feed" aria-selected="false">餵食</a>
+                    </li>
+                </ul>
 
-                                <div>
-                                    <p style="font-size: 36px; color: #333333;">繩結QQ球</p>
-                                    <br>
-                                    <p class="product-imgonep" style="font-size: 24px; color: #333333;">價格$520</p>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="chew" role="tabpanel" aria-labelledby="chew-tab">
+                        <div class="row">
+                            <div class="col-md-4">
+
+                                <div class="product-imgone">
+                                    <div class="product-imgonesize">
+                                        <a href="img/01-active.png" data-lightbox="image-1" data-title="繩結QQ球">
+                                            <img class="img-fluid" src="img/commodity (1).png" alt="繩結QQ球">
+                                        </a>
+
+                                        <div>
+                                            <p style="font-size: 36px; color: #333333;">繩結QQ球</p>
+                                            <br>
+                                            <p class="product-imgonep" style="font-size: 24px; color: #333333;">價格$520</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-4">
+
+                                <div class="product-imgtwo">
+                                    <div class="product-imgonesize">
+                                        <a href="img/lightbox(2).png" data-lightbox="image-1" data-title="冰凍酷牙棒">
+                                            <img class="img-fluid" src="img/commodity (2).png" alt="冰凍酷牙棒">
+                                        </a>
+                                        <div>
+                                            <p style="font-size: 36px; color: #333333;">冰凍酷牙棒</p>
+                                            <br>
+                                            <p class="product-imgonep" style="font-size: 24px; color: #333333;">價格$240</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product-imgthree">
+                                    <div class="product-imgonesize">
+                                        <a href="img/lightbox(3).png" data-lightbox="image-1" data-title="比漾咬咬骨">
+                                            <img class="img-fluid" src="img/commodity (3).png" alt="比漾咬咬骨">
+                                        </a>
+                                        <div>
+                                            <p style="font-size: 36px; color: #333333;">比漾咬咬骨</p>
+                                            <br>
+                                            <p class="product-imgonep" style="font-size: 24px; color: #333333;">價格$180</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-imgtwo">
-                            <div class="product-imgonesize">
-                                <a href="img/lightbox(2).png" data-lightbox="image-1" data-title="冰凍酷牙棒">
-                                    <img class="img-fluid" src="img/commodity (2).png" alt="冰凍酷牙棒">
-                                </a>
-                                <div>
-                                    <p style="font-size: 36px; color: #333333;">冰凍酷牙棒</p>
-                                    <br>
-                                    <p class="product-imgonep" style="font-size: 24px; color: #333333;">價格$240</p>
+                    <div class="tab-pane fade" id="interact" role="tabpanel" aria-labelledby="interact-tab">
+                        <div class="row">
+                            <div class="col-md-4">
+
+                                <div class="product-imgone">
+                                    <div class="product-imgonesize">
+                                        <a href="img/02-active.png" data-lightbox="image-1" data-title="小丑呼拉圈">
+                                            <img class="img-fluid" src="img/commodity (4).png" alt="小丑呼拉圈">
+                                        </a>
+
+                                        <div>
+                                            <p style="font-size: 36px; color: #333333;">小丑呼拉圈</p>
+                                            <br>
+                                            <p class="product-imgonep" style="font-size: 24px; color: #333333;">價格$350</p>
+                                        </div>
+                                    </div>
                                 </div>
+
                             </div>
+                            <div class="col-md-4">
+
+                                <div class="product-imgone">
+                                    <div class="product-imgonesize">
+                                        <a href="img/lightbox(5).png" data-lightbox="image-1" data-title="彩虹繩結球">
+                                            <img class="img-fluid" src="img/commodity (5).png" alt="彩虹繩結球">
+                                        </a>
+
+                                        <div>
+                                            <p style="font-size: 36px; color: #333333;">彩虹繩結球</p>
+                                            <br>
+                                            <p class="product-imgonep" style="font-size: 24px; color: #333333;">價格$450</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4">
+
+                                <div class="product-imgone">
+                                    <div class="product-imgonesize">
+                                        <a href="img/lightbox(6).png" data-lightbox="image-1" data-title="拋接彈力襪子球">
+                                            <img class="img-fluid" src="img/commodity (6).png" alt="拋接彈力襪子球">
+                                        </a>
+
+                                        <div>
+                                            <p style="font-size: 36px; color: #333333;">拋接彈力襪子球</p>
+                                            <br>
+                                            <p class="product-imgonep" style="font-size: 24px; color: #333333;">價格$310</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-imgthree">
-                            <div class="product-imgonesize">
-                                <a href="img/lightbox(3).png" data-lightbox="image-1" data-title="比漾咬咬骨">
-                                    <img class="img-fluid" src="img/commodity (3).png" alt="比漾咬咬骨">
-                                </a>
-                                <div>
-                                    <p style="font-size: 36px; color: #333333;">比漾咬咬骨</p>
-                                    <br>
-                                    <p class="product-imgonep" style="font-size: 24px; color: #333333;">價格$180</p>
+                    <div class="tab-pane fade" id="play" role="tabpanel" aria-labelledby="play-tab">
+                        <div class="row">
+                            <div class="col-md-4">
+
+                                <div class="product-imgone">
+                                    <div class="product-imgonesize">
+                                        <a href="img/03-active.png" data-lightbox="image-1" data-title="迷你彩虹拋接環">
+                                            <img class="img-fluid" src="img/commodity (7).png" alt="迷你彩虹拋接環">
+                                        </a>
+
+                                        <div>
+                                            <p style="font-size: 36px; color: #333333;">迷你彩虹拋接環</p>
+                                            <br>
+                                            <p class="product-imgonep" style="font-size: 24px; color: #333333;">價格$200</p>
+                                        </div>
+                                    </div>
                                 </div>
+
+                            </div>
+                            <div class="col-md-4">
+
+                                <div class="product-imgone">
+                                    <div class="product-imgonesize">
+                                        <a href="img/lightbox(8).png" data-lightbox="image-1" data-title="迷你彩虹環球">
+                                            <img class="img-fluid" src="img/commodity (8).png" alt="迷你彩虹環球">
+                                        </a>
+
+                                        <div>
+                                            <p style="font-size: 36px; color: #333333;">迷你彩虹環球</p>
+                                            <br>
+                                            <p class="product-imgonep" style="font-size: 24px; color: #333333;">價格$185</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4">
+
+                                <div class="product-imgone">
+                                    <div class="product-imgonesize">
+                                        <a href="img/lightbox(9).png" data-lightbox="image-1" data-title="迷你嗶波老鼠">
+                                            <img class="img-fluid" src="img/commodity (9).png" alt="迷你嗶波老鼠">
+                                        </a>
+
+                                        <div>
+                                            <p style="font-size: 36px; color: #333333;">迷你嗶波老鼠</p>
+                                            <br>
+                                            <p class="product-imgonep" style="font-size: 24px; color: #333333;">價格$240</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="soothe" role="tabpanel" aria-labelledby="soothe-tab">
+                        <div class="row">
+                            <div class="col-md-4 ">
+
+                                <div class="product-imgone">
+                                    <div class="product-imgonesize">
+                                        <a href="img/04-active.png" data-lightbox="image-1" data-title="愛睏狗暖暖墊">
+                                            <img class="img-fluid" src="img/commodity (10).png" alt="愛睏狗暖暖墊">
+                                        </a>
+
+                                        <div>
+                                            <p style="font-size: 36px; color: #333333;">愛睏狗暖暖墊</p>
+                                            <br>
+                                            <p class="product-imgonep" style="font-size: 24px; color: #333333;">價格$560</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="feed" role="tabpanel" aria-labelledby="feed-tab">
+                        <div class="row">
+                            <div class="col-md-4">
+
+                                <div class="product-imgone">
+                                    <div class="product-imgonesize">
+                                        <a href="img/05-active.png" data-lightbox="image-1" data-title="寵物慢食盤">
+                                            <img class="img-fluid" src="img/commodity (11).png" alt="寵物慢食盤">
+                                        </a>
+
+                                        <div>
+                                            <p style="font-size: 36px; color: #333333;">寵物慢食盤</p>
+                                            <br>
+                                            <p class="product-imgonep" style="font-size: 24px; color: #333333;">價格$450</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-4">
+
+                                <div class="product-imgone">
+                                    <div class="product-imgonesize">
+                                        <a href="img/lightbox(10).png" data-lightbox="image-1" data-title="食量控制盤">
+                                            <img class="img-fluid" src="img/commodity (12).png" alt="食量控制盤">
+                                        </a>
+
+                                        <div>
+                                            <p style="font-size: 36px; color: #333333;">食量控制盤</p>
+                                            <br>
+                                            <p class="product-imgonep" style="font-size: 24px; color: #333333;">價格$450</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4">
+
+                                <div class="product-imgone">
+                                    <div class="product-imgonesize">
+                                        <a href="img/lightbox(11).png" data-lightbox="image-1" data-title="食量防漏碗">
+                                            <img class="img-fluid" src="img/commodity (13).png" alt="食量防漏碗">
+                                        </a>
+
+                                        <div>
+                                            <p style="font-size: 36px; color: #333333;">食量防漏碗</p>
+                                            <br>
+                                            <p class="product-imgonep" style="font-size: 24px; color: #333333;">價格$450</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="content-fourD"></div>
+
+            </div>
+            <div id="content-five"></div>
+            <div class="content-five">
+                <div class="content-fiveT">
+                    <h1>關於我們</h1>
+                </div>
+                <div class="content-fiveM">
+                    <div class="content-fiveMT">
+                        <p style="font-size: 24px;color:rgb(63, 4, 59);">
+                            狗GO玩具專賣店致力研發各種獨特且創新的寵物玩具，陪伴寵物在不同成長階段所面臨的各種需求。
+                        </p>
+                    </div>
+                    <div class="content-fiveLR">
+                        <div class="row">
+                            <div class="col-md-6">
+
+                                <div class="content-oneL-img">
+                                    <div id="map"></div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="content-fiveR-up">狗GO玩具專賣店</p>
+                                <p class="content-fiveR-two">
+                                    狗GO玩具專賣店設於台中市豐原區，
+                                    <br>擁有專屬設計團隊、專業顧問及生產基地，
+                                    <br>是世界知名的寵物品牌，
+                                    <br>提供高品質、安全、耐用的寵物玩具，
+                                    <br>適合各種不同年齡層及不同體型大小的寵物。
+                                    <br>歡迎大家來店裡參觀選購。
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="content-fiveD"></div>
             </div>
-            <div class="content-fourD"></div>
-
-        </div>
-        <div id="content-five"></div>
-        <div class="content-five">
-            <div class="content-fiveT">
-                <h1>關於我們</h1>
-            </div>
-            <div class="content-fiveM">
-                <div class="content-fiveMT">
-                    <p style="font-size: 24px;color:rgb(63, 4, 59);">
-                        狗GO玩具專賣店致力研發各種獨特且創新的寵物玩具，陪伴寵物在不同成長階段所面臨的各種需求。
-                    </p>
+            <div id="content-six"></div>
+            <div class="content-six">
+                <div class="content-sixT">
+                    <h1>聯繫我們</h1>
                 </div>
-                <div class="content-fiveLR">
+                <div class="content-sixM">
+                    <div class="container col-md-4 col-md-offset-4">
+                        <p class="content-sixMT" style="font-size: 20px;">
+                            台中市豐原區上益路20號
+                            <br>週一至週五9:30~17:00
+                        </p>
+                        <p class="content-sixMM" style="font-size: 26px;">
+                            TEL：04-1234-5678
+                        </p>
+                        <p class="content-sixMD" style="font-size: 26px;">
+                            Email：go@toystore.tw
+                        </p>
+                        <div class="row">
+                            <div class="col-md-6 col-6">
+                                <div class="content-sixL">
+                                    <a href="https://www.facebook.com/%E7%8B%97go%E7%8E%A9%E5%85%B7%E5%B0%88%E8%B3%A3%E5%BA%97-101259664029204/?modal=admin_todo_tour"
+                                        target="_blank">
+                                        <img width="40" height="40" src="img/fb-icon.png" alt="fb-icon">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-6">
+                                <div class="content-sixR">
+                                    <a href="https://line.me/R/ti/p/%40cis4699h" target="_blank">
+                                        <img height="36" border="0" alt="加入好友" src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png">
+                                    </a>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="content-sixD"></div>
+            </div>
+            <div id="content-seven"></div>
+            <div class="content-seven">
+                <div class="content-sevenT">
+                    <h1>領養資訊</h1>
+                </div>
+                <div class="container col-md-8 col-md-offset-2">
+                    <div class="content-sevenMP">
+                        <p class="dog" style="font-size: 38px;">
+                            想養狗狗可以去各地收容所領養喔^ __ ^
+                        </p>
+                    </div>
+                    <div class="content-sevenMD">
+                        <img class="img-fluid" width="670" src="img/adopt.jpg" alt="以領養代替購買">
+                    </div>
                     <div class="row">
-                        <div class="col-md-6">
-
-                            <div class="content-oneL-img">
-                                <div id="map"></div>
-
+                        <div class="col-md-6 col-6">
+                            <div class="left">
+                                <a href="http://www.animal.taichung.gov.tw/lp.asp?CtNode=7813&CtUnit=1687&BaseDSD=57&mp=119020" target="_blank" style="color:black;">台中市動物保護防疫處</a>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <p class="content-fiveR-up">狗GO玩具專賣店</p>
-                            <p class="content-fiveR-two">
-                                狗GO玩具專賣店設於台中市豐原區，
-                                <br>擁有專屬設計團隊、專業顧問及生產基地，
-                                <br>是世界知名的寵物品牌，
-                                <br>提供高品質、安全、耐用的寵物玩具，
-                                <br>適合各種不同年齡層及不同體型大小的寵物。
-                                <br>歡迎大家來店裡參觀選購。
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="content-fiveD"></div>
-        </div>
-        <div id="content-six"></div>
-        <div class="content-six">
-            <div class="content-sixT">
-                <h1>聯繫我們</h1>
-            </div>
-            <div class="content-sixM">
-                <div class="container col-md-4 col-md-offset-4">
-                    <p class="content-sixMT" style="font-size: 20px;">
-                        台中市豐原區上益路20號
-                        <br>週一至週五9:30~17:00
-                    </p>
-                    <p class="content-sixMM" style="font-size: 26px;">
-                        TEL：04-1234-5678
-                    </p>
-                    <p class="content-sixMD" style="font-size: 26px;">
-                        Email：go@toystore.tw
-                    </p>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="content-sixL">
-                                <a href="https://www.facebook.com/%E7%8B%97go%E7%8E%A9%E5%85%B7%E5%B0%88%E8%B3%A3%E5%BA%97-101259664029204/?modal=admin_todo_tour"
-                                    target="_blank">
-                                    <img width="40" height="40" src="img/fb-icon.png" alt="fb-icon">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="content-sixR">
-                                <a href="https://line.me/R/ti/p/%40cis4699h" target="_blank">
-                                    <img height="36" border="0" alt="加入好友" src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png">
-                                </a>
-
+                        <div class="col-md-6 col-6">
+                            <div class="left">
+                                <a href="http://animal-adoption.coa.gov.tw/index.php/animal/animal_info/?p=7&id=51582&s_area=ALL&s_kind=ALL&s_bodytype=MEDIUM&s_age=ALL&s_color=%E5%85%B6%E4%BB%96&s_sex=ALL&num=8"
+                                    target="_blank" style="color:black;">全國推廣動物認養平台</a>
                             </div>
                         </div>
 
                     </div>
-                </div>
-
-            </div>
-            <div class="content-sixD"></div>
-        </div>
-        <div id="content-seven"></div>
-        <div class="content-seven">
-            <div class="content-sevenT">
-                <h1>領養資訊</h1>
-            </div>
-            <div class="container col-md-8 col-md-offset-2">
-                <div class="content-sevenMP">
-                    <p class="content-sevenMT" style="font-size: 38px;">
-                        想養狗狗可以去各地收容所領養喔^ __ ^
-                    </p>
-                </div>
-                <div class="content-sevenMD">
-                    <img class="content-sevenMD-img" width="670" src="img/adopt.jpg" alt="以領養代替購買">
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="left">
-                            <a href="http://www.animal.taichung.gov.tw/lp.asp?CtNode=7813&CtUnit=1687&BaseDSD=57&mp=119020" target="_blank" style="color:black;">台中市動物保護防疫處</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="left">
-                            <a href="http://animal-adoption.coa.gov.tw/index.php/animal/animal_info/?p=7&id=51582&s_area=ALL&s_kind=ALL&s_bodytype=MEDIUM&s_age=ALL&s_color=%E5%85%B6%E4%BB%96&s_sex=ALL&num=8"
-                                target="_blank" style="color:black;">全國推廣動物認養平台</a>
-                        </div>
-                    </div>
-
-
                 </div>
             </div>
 
@@ -1172,22 +1532,7 @@
 
 
 
-        <script>
-            $(document).ready(function () {
-                $('a[href^="#"]').on('click', function (e) {
-                    e.preventDefault();
 
-                    var target = this.hash;
-                    var $target = $(target);
-
-                    $('html, body').stop().animate({
-                        'scrollTop': $target.offset().top
-                    }, 900, 'swing', function () {
-                        window.location.hash = target;
-                    });
-                });
-            });
-        </script>
         <script src="js/lightbox.min.js"></script>
         <script>
             lightbox.option({
@@ -1212,44 +1557,44 @@
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACnwSa1TDocVBIlVFmcT-Lp1ZsKSjEqmM&callback=initMap">
         </script>
         <!-- 回到頂端按鈕 start -->
-<script>
-        //<![CDATA[
-        (function () {
-        $("body").append("<img id='goTopButton' style='display: none; z-index: 5; cursor: pointer;' title='回到頂端'/>");
-        var img="https://videoindustrial.com/wp-content/themes/carylon/images/TopButton.png",
-        locatioin = 1/2, // 按鈕出現在螢幕的高度
-        right = 10, // 距離右邊 px 值
-        opacity = 0.3, // 透明度
-        speed = 500, // 捲動速度
-        $button = $("#goTopButton"),
-        $body = $(document),
-        $win = $(window);
-        $button.attr("src", img);
-        $button.on({
-        mouseover: function() {$button.css("opacity", 1);},
-        mouseout: function() {$button.css("opacity", opacity);},
-        click: function() {$("html, body").animate({scrollTop: 0}, speed);}
-        });
-        window.goTopMove = function () {
-        var scrollH = $body.scrollTop(),
-        winH = $win.height(),
-        css = {"top": winH * locatioin + "px", "position": "fixed", "right": right, "opacity": opacity};
-        if(scrollH > 20) {
-        $button.css(css);
-        $button.fadeIn("slow");
-        } else {
-        $button.fadeOut("slow");
-        }
-        };
-        $win.on({
-        scroll: function() {goTopMove();},
-        resize: function() {goTopMove();}
-        });
-        } )();
+        <script>
+            //<![CDATA[
+            (function () {
+                $("body").append("<img id='goTopButton' style='display: none; z-index: 5; cursor: pointer;' title='回到頂端'/>");
+                var img = "https://videoindustrial.com/wp-content/themes/carylon/images/TopButton.png",
+                    locatioin = 2/ 3, // 按鈕出現在螢幕的高度
+                    right = 10, // 距離右邊 px 值
+                    opacity = 0.3, // 透明度
+                    speed = 500, // 捲動速度
+                    $button = $("#goTopButton"),
+                    $body = $(document),
+                    $win = $(window);
+                $button.attr("src", img);
+                $button.on({
+                    mouseover: function () { $button.css("opacity", 1); },
+                    mouseout: function () { $button.css("opacity", opacity); },
+                    click: function () { $("html, body").animate({ scrollTop: 0 }, speed); }
+                });
+                window.goTopMove = function () {
+                    var scrollH = $body.scrollTop(),
+                        winH = $win.height(),
+                        css = { "top": winH * locatioin + "px", "position": "fixed", "right": right, "opacity": opacity };
+                    if (scrollH > 20) {
+                        $button.css(css);
+                        $button.fadeIn("slow");
+                    } else {
+                        $button.fadeOut("slow");
+                    }
+                };
+                $win.on({
+                    scroll: function () { goTopMove(); },
+                    resize: function () { goTopMove(); }
+                });
+            })();
         //]]>
         </script>
         <!-- 回到頂端按鈕 end, Design by WFU BLOG -->
-        
+
 
 
 </body>
