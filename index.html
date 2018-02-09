@@ -33,8 +33,8 @@
 
         }
 
-        .navbar-toggle{
-            display:none;
+        .navbar-toggle {
+            display: none;
         }
 
         .navbar {
@@ -808,15 +808,15 @@
                 overflow: hidden!important;
             }
 
-            .navbar-toggle{
+            .navbar-toggle {
                 display: block;
-                
-        }
 
-        #content-five {
-            height: 0px;
-            transform: translateY(1450px);
-        }
+            }
+
+            #content-five {
+                height: 0px;
+                transform: translateY(1450px);
+            }
 
 
 
@@ -828,9 +828,9 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
         <div class="container">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
-                        <i class="fas fa-bars"></i> 
-                    </button>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <i class="fas fa-bars"></i>
+            </button>
 
             <a class="navbar-brand" href="#">
                 <img class="img-fluid" src="img/go-icon-01-01.png" alt="狗GO玩具專賣店">
@@ -846,37 +846,37 @@
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#content-one">新品上市
-              
+
                         </a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#content-two">限定優惠
-                            
+
                         </a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#content-three">抗憂救星
-                           
+
                         </a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#content-four">商品專區
-                        
+
                         </a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#content-five">關於我們
-                            
+
                         </a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#content-six">聯繫我們
-                            
+
                         </a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#content-seven">領養資訊
-                         
+
                         </a>
                     </li>
                 </ul>
@@ -1668,8 +1668,15 @@
         </script>
         <!-- 回到頂端按鈕 end, Design by WFU BLOG -->
 
-
-
+        <script>
+            $(function () {
+                if ($(window).width() < 480) { //當視窗小於480時才運作
+                    $('.navbar a').on('click', function () {
+                        $('.navbar-toggle').click();
+                    });
+                }
+            });
+        </script>
 </body>
 
 </html>
